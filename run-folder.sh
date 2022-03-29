@@ -47,7 +47,7 @@ OUT=$(echo $OUT | sed "s/\/$//")
 
 echo "detecting all *$FMT slides in $DIR"
 echo "output in $OUT"
-echo "  rescale factor is $RF"
+echo "  rescale factor is $RF "
 
 for slide_path in $DIR/*$FMT
 do
