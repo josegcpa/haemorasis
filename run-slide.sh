@@ -18,6 +18,7 @@ do
         -r ) RF=$2; shift 2 ;;
         -m ) MODE=$2; shift 2 ;;
         -h )
+            echo "Batch Haemorasis - blood cell detection pipeline"
             echo "arguments (required):
                 -i : input slide
                 -o : output directory"
