@@ -27,7 +27,7 @@ arguments (optional):
                 -m : mode (local or cluster (only LSF supported))
 
 example:
-                sh run-slide.sh -i slide_dir -o output_dir -f tiff -r 1.1
+                bash run-slide.sh -i slide_dir -o output_dir -f tiff -r 1.1
 ```
 
 ## Usage of `run-folder.sh` (to run a folder of digitalised slides with a given format):
@@ -46,6 +46,6 @@ arguments (optional):
                 -m : mode (local or cluster (only LSF supported))
 
 example:
-                sh run-folder.sh -i slide_dir -o output_dir -f tiff -r 1.1
+                bash run-folder.sh -i slide_dir -o output_dir -f tiff -r 1.1
 ```
 
