@@ -1,6 +1,6 @@
 # Pipeline to detect, characterize and annotate WBC and RBC in peripheral blood slides (PBS)
 
-All necessary Python packages are in requirements.txt. This pipeline --- Haemorasis --- was developed and tested using Python 3.6.8 and on 8GB RAM + 12GB VRAM on CentOS Linux 8 (kernel: Linux 4.18.0-240.22.1.el8_3.x86_64). Haemorasis is composed of 7 steps (0 is optional) and is orchestrated by a snakemake pipeline (`Snakefile`):
+All necessary Python packages are in requirements-pipeline.txt. This pipeline --- Haemorasis --- was developed and tested using Python 3.6.8 and on 8GB RAM + 12GB VRAM on CentOS Linux 8 (kernel: Linux 4.18.0-240.22.1.el8_3.x86_64). Haemorasis is composed of 7 steps (0 is optional) and is orchestrated by a snakemake pipeline (`Snakefile`):
 
 0. The model checkpoints are downloaded if they are not available
 1. Quality control of the PBS --- each 512*512 tile is quality controlled to filter out tiles with excessive/defficient cellular density and/or poor resolution (output stored as `{output.directory}/_quality_control/{slide.id}.h5`)
