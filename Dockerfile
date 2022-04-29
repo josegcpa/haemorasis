@@ -26,7 +26,7 @@ RUN cp /app/run-folder.sh /app/run-folder
 RUN chmod +x /app/run-slide
 RUN chmod +x /app/run-folder
 
-ENV CKPT_URL https://figshare.com/ndownloader/articles/19164209?private_link=f331c773f4a0770db5da
+ENV CKPT_URL https://figshare.com/ndownloader/articles/19164209/versions/1
 
 RUN python3 test-packages.py
 
