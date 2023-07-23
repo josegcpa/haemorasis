@@ -2,6 +2,8 @@
 
 # Pipeline to detect, characterize and annotate WBC and RBC in peripheral blood slides (PBS)
 
+Now [available on Nature Communications]([https://www.medrxiv.org/content/10.1101/2022.04.19.22273757v1](https://www.nature.com/articles/s41467-023-39676-y))!
+
 All necessary Python packages are in requirements-pipeline.txt. This pipeline --- Haemorasis --- was developed and tested using Python 3.6.8 and on 8GB RAM + 12GB VRAM on CentOS Linux 8 (kernel: Linux 4.18.0-240.22.1.el8_3.x86_64). Haemorasis is composed of 7 steps (0 is optional) and is orchestrated by a snakemake pipeline (`Snakefile`):
 
 0. The model checkpoints are downloaded if they are not available
@@ -24,7 +26,7 @@ To test the code provided here, you must first have a working Python 3.6.8 versi
 
 ## Docker container and further instructions
 
-A Docker container has been made available to facilitate the application of this pipeline in https://hub.docker.com/repository/docker/josegcpa/blood-cell-detection. Instructions on Docker usage are provided in the Docker container landing page and in the Supplementary Materials of the publication where this software was used (https://www.medrxiv.org/content/10.1101/2022.04.19.22273757v1) under "Setting up Haemorasis" and "Running Haemorasis".
+A Docker container has been made available to facilitate the application of this pipeline in https://hub.docker.com/repository/docker/josegcpa/blood-cell-detection. Instructions on Docker usage are provided in the Docker container landing page and in the Supplementary Materials of the publication where this software was used ([available on Nature Communications]([https://www.medrxiv.org/content/10.1101/2022.04.19.22273757v1](https://www.nature.com/articles/s41467-023-39676-y))) under "Setting up Haemorasis" and "Running Haemorasis".
 
 ### Usage of `run-slide.sh` (to run a single digitalised slide):
 
